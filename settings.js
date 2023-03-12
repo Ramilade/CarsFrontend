@@ -1,4 +1,4 @@
-export const API_URL = "http://rami0904.azurewebsites.net/api"
+export const API_URL = "https://rami0904.azurewebsites.net/api"
 //export const API_URL = "http://localhost:8080/api"
 
 
