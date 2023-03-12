@@ -21,6 +21,10 @@ export function initFindEditCar() {
     const id = carIdInput.value;
     try {
       const res = await fetch(`${URL}/${id}`);
+      if (res.status === 404) {
+        infoText.textContent = "Car not found";
+        return;
+      }
       const data = await res.json();
       if (data.error) {
         infoText.textContent = data.error;
